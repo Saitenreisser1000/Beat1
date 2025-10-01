@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 34e5e069310e5494dbace3d18e8f3c73
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - punkController: {fileID: 22100000, guid: ec144af63ef4a424da44af4ebc446d1a, type: 2}
+  - trachtController: {fileID: 22100000, guid: c7d4de961c6e57e45939b0fa8fd6f609, type: 2}
+  - klassikController: {fileID: 22100000, guid: f6ff38e3a70b0cb4a82e62f56e851d9f, type: 2}
+  - reggaeController: {fileID: 22100000, guid: 5ef9d20bc1f2d8d40b07a49bb175af5f, type: 2}
+  - metalController: {fileID: 22100000, guid: 5ffefe26eb37afb46a7c0d5456023aad, type: 2}
+  - tileSkinManager: {instanceID: 0}
+  - jumpSound: {fileID: 8300000, guid: b9a93588cf036bb49b881ed00dfc57ac, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

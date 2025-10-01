@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: eb8f5cf4468a6c14cb2d4c7a61f0674d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4463110338929348005
+    second: Dekoblocks_0
+  - first:
+      213: 196694291219855762
+    second: Dekoblocks_1
+  - first:
+      213: -8785194725825412722
+    second: Dekoblocks_2
+  - first:
+      213: -4564056057913995505
+    second: Dekoblocks_3
+  - first:
+      213: -1252040922748615642
+    second: Dekoblocks_4
+  - first:
+      213: 8745412232227915203
+    second: Dekoblocks_5
+  - first:
+      213: -6881120835550263119
+    second: Dekoblocks_6
+  - first:
+      213: -6729518035916595544
+    second: Dekoblocks_7
+  - first:
+      213: -8466851065868682802
+    second: Dekoblocks_8
+  - first:
+      213: 8905973245053783783
+    second: Dekoblocks_9
+  - first:
+      213: 9022062160832475761
+    second: Dekoblocks_10
+  - first:
+      213: -3884429205042832764
+    second: Dekoblocks_11
+  - first:
+      213: 3695354184250091368
+    second: Dekoblocks_12
+  - first:
+      213: -6323593911881507035
+    second: Dekoblocks_13
+  - first:
+      213: 6983739806570982933
+    second: Dekoblocks_14
+  - first:
+      213: 2163406501943120898
+    second: Dekoblocks_15
+  - first:
+      213: -4517685407729787281
+    second: Dekoblocks_16
+  - first:
+      213: -1815756296589263637
+    second: Dekoblocks_17
+  - first:
+      213: 3959287948669633050
+    second: Dekoblocks_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dekoblocks_0
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 2015
+        width: 866
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b523eb61bc8df02c0800000000000000
+      internalID: -4463110338929348005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_1
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 2015
+        width: 290
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 299b18d6a6ccab200800000000000000
+      internalID: 196694291219855762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_2
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 2303
+        width: 578
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e818a8c51f7b41680800000000000000
+      internalID: -8785194725825412722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_3
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 2303
+        width: 578
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f011d523739a0c0800000000000000
+      internalID: -4564056057913995505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_4
+      rect:
+        serializedVersion: 2
+        x: 3743
+        y: 2303
+        width: 290
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62401531a6bdf9ee0800000000000000
+      internalID: -1252040922748615642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_5
+      rect:
+        serializedVersion: 2
+        x: 4319
+        y: 2591
+        width: 290
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c50d4c0712fd5970800000000000000
+      internalID: 8745412232227915203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_6
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1439
+        width: 866
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8cc7cce095180a0800000000000000
+      internalID: -6881120835550263119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_7
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 1439
+        width: 290
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae5b973003fb92a0800000000000000
+      internalID: -6729518035916595544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_8
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 1439
+        width: 578
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec972cc90d3bf7a80800000000000000
+      internalID: -8466851065868682802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_9
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 1439
+        width: 578
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee40920b7f589b70800000000000000
+      internalID: 8905973245053783783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_10
+      rect:
+        serializedVersion: 2
+        x: 3743
+        y: 1727
+        width: 578
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172b9edfbbdc43d70800000000000000
+      internalID: 9022062160832475761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_11
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 719
+        width: 866
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ad446f73cb71ac0800000000000000
+      internalID: -3884429205042832764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_12
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 287
+        width: 290
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867ea7f3d09884330800000000000000
+      internalID: 3695354184250091368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_13
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 719
+        width: 289
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52fda7a47d41e38a0800000000000000
+      internalID: -6323593911881507035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_14
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 864
+        width: 578
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e2b664a5a3be060800000000000000
+      internalID: 6983739806570982933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_15
+      rect:
+        serializedVersion: 2
+        x: 3744
+        y: 575
+        width: 289
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204171550c6f50e10800000000000000
+      internalID: 2163406501943120898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_16
+      rect:
+        serializedVersion: 2
+        x: 4060
+        y: 574
+        width: 548
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6edc41be05fd41c0800000000000000
+      internalID: -4517685407729787281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_17
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 287
+        width: 578
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec3e1fb4432dc6e0800000000000000
+      internalID: -1815756296589263637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dekoblocks_18
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 0
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1240ff796732f630800000000000000
+      internalID: 3959287948669633050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dekoblocks_0: -4463110338929348005
+      Dekoblocks_1: 196694291219855762
+      Dekoblocks_10: 9022062160832475761
+      Dekoblocks_11: -3884429205042832764
+      Dekoblocks_12: 3695354184250091368
+      Dekoblocks_13: -6323593911881507035
+      Dekoblocks_14: 6983739806570982933
+      Dekoblocks_15: 2163406501943120898
+      Dekoblocks_16: -4517685407729787281
+      Dekoblocks_17: -1815756296589263637
+      Dekoblocks_18: 3959287948669633050
+      Dekoblocks_2: -8785194725825412722
+      Dekoblocks_3: -4564056057913995505
+      Dekoblocks_4: -1252040922748615642
+      Dekoblocks_5: 8745412232227915203
+      Dekoblocks_6: -6881120835550263119
+      Dekoblocks_7: -6729518035916595544
+      Dekoblocks_8: -8466851065868682802
+      Dekoblocks_9: 8905973245053783783
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

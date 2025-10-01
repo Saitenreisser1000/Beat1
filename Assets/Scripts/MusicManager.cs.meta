@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 1898e8c4070796644ad3c7e52c81dd67
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - audioSource: {instanceID: 0}
+  - beatClip: {fileID: 8300000, guid: 0a6e609b6c3ab2840aeb8975593dc91b, type: 3}
+  - punkClip: {fileID: 8300000, guid: 03ffe8c79e161064981b1fc78c7d6081, type: 3}
+  - trachtClip: {fileID: 8300000, guid: 3e7d5b8ff2ecec34a95fc2bb241ad884, type: 3}
+  - klassikClip: {fileID: 8300000, guid: 6283f2cef03ad05488460c40f02974cc, type: 3}
+  - reggaeClip: {fileID: 8300000, guid: f2895b9f102664e479ed324ba5165cb5, type: 3}
+  - metalClip: {fileID: 8300000, guid: ff05cf2f78d34de4c97848919d70e109, type: 3}
+  - scratchSource: {instanceID: 0}
+  - scratchClip: {fileID: 8300000, guid: b5fdf27a701eac543946515ed5614f49, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
