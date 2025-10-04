@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleJumpInput()
     {
-        if (Input.GetButton("Jump") && grounded && body.linearVelocity.y <= 0.01f)
+        if (Input.GetButtonDown("Jump") && grounded && body.linearVelocity.y <= 0.01f)
         {
             Jump();
         }
