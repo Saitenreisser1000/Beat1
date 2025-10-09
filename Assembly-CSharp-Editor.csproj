@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Sprites/Levels/Assets/Editor/TileAssetGenerator.cs" />
+    <Compile Include="Assets/Sprites/Editor/TileSkinManagerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

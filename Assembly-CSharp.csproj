@@ -57,6 +57,7 @@
     <Compile Include="Assets/Scripts/EnemyPatrol.cs" />
     <Compile Include="Assets/Scripts/MusicManager.cs" />
     <Compile Include="Assets/Scripts/TileScaler.cs" />
+    <Compile Include="Assets/Scripts/PatrolWindow.cs" />
     <Compile Include="Assets/Scripts/ParallaxLayer.cs" />
   </ItemGroup>
   <ItemGroup>

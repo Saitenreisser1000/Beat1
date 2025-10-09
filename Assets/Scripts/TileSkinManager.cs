@@ -6,12 +6,13 @@ using UnityEngine.Tilemaps;
 using UnityEditor;
 #endif
 
+[ExecuteAlways] // Damit es auch im Editor funktioniert
 public class TileSkinManager : MonoBehaviour
 {
     [Header("Parallax-Hintergrund")]
     [SerializeField] private ParallaxSkinManager parallaxSkinManager;
-    
-    [Header("Ziel-Tilemaps (z. B. Boden + Deko)")]
+
+    [Header("Ziel-Tilemaps (z. B. Boden + Deko)")]
     public List<Tilemap> tilemaps;
 
     [Header("Tiles im Beat-Stil (Startzustand)")]
@@ -36,6 +37,16 @@ public class TileSkinManager : MonoBehaviour
 
     private void Awake()
     {
+        BuildStyleDictionary();
+    }
+
+    private void OnEnable()
+    {
+        BuildStyleDictionary();
+    }
+
+    private void BuildStyleDictionary()
+    {
         styleTiles = new Dictionary<string, List<TileBase>>
         {
             ["Beat"] = beatTiles,
@@ -47,8 +58,14 @@ public class TileSkinManager : MonoBehaviour
         };
     }
 
+    // --------------------------------------------
+    // SKIN-WECHSEL
+    // --------------------------------------------
     public void ApplySkin(string targetStyle)
     {
+        if (styleTiles == null || styleTiles.Count == 0)
+            BuildStyleDictionary();
+
         if (!styleTiles.ContainsKey(targetStyle))
         {
             Debug.LogWarning($"Stil '{targetStyle}' nicht gefunden.");
@@ -86,8 +103,19 @@ public class TileSkinManager : MonoBehaviour
                 }
             }
         }
-    parallaxSkinManager?.ApplySkin(targetStyle);
 
+        parallaxSkinManager?.ApplySkin(targetStyle);
+
+#if UNITY_EDITOR
+        if (!Application.isPlaying)
+        {
+            EditorUtility.SetDirty(this);
+            foreach (var map in tilemaps)
+                EditorUtility.SetDirty(map);
+        }
+#endif
+
+        Debug.Log($"Skin gewechselt auf: {targetStyle}");
     }
 
     private List<TileBase> FindCurrentReferenceList()
@@ -118,6 +146,8 @@ public class TileSkinManager : MonoBehaviour
     public void AutoFillTileLists()
     {
 #if UNITY_EDITOR
+        BuildStyleDictionary();
+
         beatTiles = LoadTilesFromPath("Assets/Tiles/LV-Beat");
         punkTiles = LoadTilesFromPath("Assets/Tiles/LV-Punk");
         trachtTiles = LoadTilesFromPath("Assets/Tiles/LV-Tracht");
@@ -126,7 +156,10 @@ public class TileSkinManager : MonoBehaviour
         metalTiles = LoadTilesFromPath("Assets/Tiles/LV-Metal");
 
         Debug.Log("Tile-Listen automatisch befüllt.");
+        ApplySkin("Beat");
+
         EditorUtility.SetDirty(this);
+        AssetDatabase.SaveAssets();
 #endif
     }
 
