@@ -15,6 +15,7 @@ public class TileSkinManager : MonoBehaviour
     [Header("Ziel-Tilemaps (z. B. Boden + Deko)")]
     public List<Tilemap> tilemaps;
 
+    //TODO - Diese Listen im Editor automatisch befüllen lassen
     [Header("Tiles im Beat-Stil (Startzustand)")]
     public List<TileBase> beatTiles;
 
@@ -156,7 +157,7 @@ public class TileSkinManager : MonoBehaviour
         metalTiles = LoadTilesFromPath("Assets/Tiles/LV-Metal");
 
         Debug.Log("Tile-Listen automatisch befüllt.");
-        ApplySkin("Beat");
+        ApplySkin("Beat"); // Setze Standard-Skin
 
         EditorUtility.SetDirty(this);
         AssetDatabase.SaveAssets();
