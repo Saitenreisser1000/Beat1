@@ -8,16 +8,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("Bewegung")]
     [SerializeField] private float speed = 5f;
 
-    [Header("Skins")]
-    [SerializeField] private AnimatorOverrideController punkController;
-    [SerializeField] private AnimatorOverrideController trachtController;
-    [SerializeField] private AnimatorOverrideController klassikController;
-    [SerializeField] private AnimatorOverrideController reggaeController;
-    [SerializeField] private AnimatorOverrideController metalController;
-
-    // Referenz zum TileSkinManager für den Skinwechsel
-    [SerializeField] private TileSkinManager tileSkinManager;
-
     [SerializeField] private AudioClip jumpSound;
     private AudioSource audioSource;
 
@@ -26,10 +16,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float headCheckRadius = 0.2f;
 
     // === Interne Referenzen & Zustände ===
-    private AnimatorOverrideController originalController;
     private Rigidbody2D body;
     private Animator anim;
-    private string currentSkin = "beat";
     private bool grounded;
     private bool isFacingRight = true;
 
@@ -40,17 +28,15 @@ public class PlayerMovement : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        originalController = new AnimatorOverrideController(anim.runtimeAnimatorController);
         audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
         HandleMovementInput();
-        HandleJumpInput();
         HandleDuckAndCrawlInput();
+        HandleJumpInput();
         UpdateAnimatorStates();
-        HandleSkinChange();
     }
 
     private void HandleMovementInput()
@@ -137,85 +123,14 @@ public class PlayerMovement : MonoBehaviour
         grounded = false;
     }
 
-    // === Skinwechsel mit Priorisierung und Anti-Doppeltrigger ===
-    private void HandleSkinChange()
+    // Sprite-Wechsel für Themenwechsel im Editormode
+    public void ChangeSprite(Sprite idleBeat)
     {
-        Vector2 currentDPad = new Vector2(
-            Input.GetAxisRaw("DPadHorizontal"),
-            Input.GetAxisRaw("DPadVertical")
-        );
-
-        // Metal (↗ oder Taste 6)
-        if (Input.GetKeyDown(KeyCode.Alpha6) ||
-                 (currentDPad.x > 0.5f && currentDPad.y > 0.5f &&
-                  !(lastDPad.x > 0.5f && lastDPad.y > 0.5f)))
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null && idleBeat != null)
         {
-            TryChangeSkin("metal", metalController, new Color(0.3f, 0.3f, 0.3f));
+            spriteRenderer.sprite = idleBeat;
         }
-        // Reggae (↖ oder Taste 5)
-        else if (Input.GetKeyDown(KeyCode.Alpha5) ||
-            (currentDPad.x < -0.5f && currentDPad.y > 0.5f &&
-             !(lastDPad.x < -0.5f && lastDPad.y > 0.5f)))
-        {
-            TryChangeSkin("reggae", reggaeController, new Color(0.8f, 0.7f, 0.4f));
-        }
-        // Beat (↑ oder Taste 1)
-        else if (Input.GetKeyDown(KeyCode.Alpha1) ||
-                 (currentDPad.y > 0.5f && !(lastDPad.y > 0.5f)))
-        {
-            TryChangeSkin("beat", originalController, new Color(0.5f, 0.5f, 0.5f));
-        }
-        // Tracht (← oder Taste 3)
-        else if (Input.GetKeyDown(KeyCode.Alpha3) ||
-                 (currentDPad.x < -0.5f && !(lastDPad.x < -0.5f)))
-        {
-            TryChangeSkin("tracht", trachtController, new Color(0.55f, 0.8f, 0.5f));
-        }
-        // Punk (→ oder Taste 2)
-        else if (Input.GetKeyDown(KeyCode.Alpha2) ||
-                 (currentDPad.x > 0.5f && !(lastDPad.x > 0.5f)))
-        {
-            TryChangeSkin("punk", punkController, new Color(0.8f, 0.3f, 0.3f));
-        }
-        // Klassik (↓ oder Taste 4)
-        else if (Input.GetKeyDown(KeyCode.Alpha4) ||
-                 (currentDPad.y < -0.5f && !(lastDPad.y < -0.5f)))
-        {
-            TryChangeSkin("klassik", klassikController, new Color(0.75f, 0.55f, 0.85f));
-        }
-      
-        lastDPad = currentDPad; // DPad-Zustand für nächsten Frame merken
-    }
-
-    private void TryChangeSkin(string skinName, AnimatorOverrideController controller, Color backgroundColor)
-    {
-        if (currentSkin == skinName) return;
-
-        ChangeSkin(controller, backgroundColor);
-        FindFirstObjectByType<MusicManager>().PlayScratchAndChangeMusic(skinName);
-        tileSkinManager.ApplySkin(char.ToUpper(skinName[0]) + skinName.Substring(1));
-        currentSkin = skinName;
-    }
-
-    private void ChangeSkin(AnimatorOverrideController newController, Color backgroundColor)
-    {
-        bool ducking = anim.GetBool("ducking");
-        bool crawling = anim.GetBool("crawling");
-        bool groundedNow = grounded;
-        bool facing = isFacingRight;
-
-        AnimatorStateInfo currentState = anim.GetCurrentAnimatorStateInfo(0);
-        float normalizedTime = currentState.normalizedTime;
-
-        anim.runtimeAnimatorController = newController;
-        anim.Rebind();
-        anim.SetBool("facingright", facing);
-        anim.SetBool("ducking", ducking);
-        anim.SetBool("crawling", crawling);
-        anim.SetBool("grounded", groundedNow);
-
-        anim.Play(currentState.shortNameHash, 0, normalizedTime);
-        Camera.main.backgroundColor = backgroundColor;
     }
 
     private void OnDrawGizmosSelected()

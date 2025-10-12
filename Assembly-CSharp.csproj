@@ -54,6 +54,7 @@
     <Compile Include="Assets/Scripts/ParallaxSkinManager.cs" />
     <Compile Include="Assets/Scripts/PixelPerfectFollow.cs" />
     <Compile Include="Assets/Scripts/SnapToGround.cs" />
+    <Compile Include="Assets/Scripts/ChangeTheme.cs" />
     <Compile Include="Assets/Scripts/EnemyPatrol.cs" />
     <Compile Include="Assets/Scripts/MusicManager.cs" />
     <Compile Include="Assets/Scripts/TileScaler.cs" />
