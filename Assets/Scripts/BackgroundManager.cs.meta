@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 4b98e88ec4c67cb4f8e9c64dbca6078e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - beat_Back: {fileID: 21300000, guid: 112014577aed9a54b9bf1840e3669002, type: 3}
+  - beat_Mid: {fileID: 21300000, guid: a6dad616f9c9b8346a1aee11d19cf202, type: 3}
+  - beat_Front: {fileID: 21300000, guid: 6f0255d5841dffa4ebfff2d6682c2d84, type: 3}
+  - punk_Back: {fileID: 21300000, guid: 020e78d9da6843a4783de608c4ffee7d, type: 3}
+  - punk_Mid: {fileID: 21300000, guid: 027ed2cb6c3d000418c3d7174191d5ed, type: 3}
+  - punk_Front: {fileID: 21300000, guid: a8f285a88dd52674f837bcf72702f97a, type: 3}
+  - tracht_Back: {fileID: 21300000, guid: 6395cd63a72509247b004f7af241d570, type: 3}
+  - tracht_Mid: {fileID: 21300000, guid: 32ba7c2f60634f248ad922ad2fdea669, type: 3}
+  - tracht_Front: {fileID: 21300000, guid: fb789b61fdba0744490d2df5bed5e909, type: 3}
+  - klassik_Back: {fileID: 21300000, guid: 262957c43da663b43844f7fd71086bec, type: 3}
+  - klassik_Mid: {fileID: 21300000, guid: d40c5ee424db2024fb15d10f1700799f, type: 3}
+  - klassik_Front: {fileID: 21300000, guid: 35b07f51964a9b74aaa79016e573d5fa, type: 3}
+  - reggae_Back: {fileID: 21300000, guid: 566d7d615220a654fb1d04a2dc7d7d4f, type: 3}
+  - reggae_Mid: {fileID: 21300000, guid: cc417c385801a3e48ad78f689a35233f, type: 3}
+  - reggae_Front: {fileID: 21300000, guid: cf6ca217707511a45a0a599e29292fae, type: 3}
+  - metal_Back: {fileID: 21300000, guid: 9ee92ea9823a1a649b19b3d963edf566, type: 3}
+  - metal_Mid: {fileID: 21300000, guid: 8c1b69f7706e9454c82204adcdc7c802, type: 3}
+  - metal_Front: {fileID: 21300000, guid: 1f195d4dbd9941d49afbaa05b804cb80, type: 3}
+  - backRenderer: {instanceID: 0}
+  - midRenderer: {instanceID: 0}
+  - frontRenderer: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

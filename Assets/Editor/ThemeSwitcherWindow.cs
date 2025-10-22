@@ -5,7 +5,7 @@ public class ThemeSwitcherWindow : EditorWindow
 {
     private const string StartWithBeatKey = "ThemeSwitcher_StartWithBeat";
 
-    private ChangeTheme themeScript;
+    private SkinManager themeScript;
     private GameObject gameManagerObj;
     private string[] skinOptions = { "beat", "punk", "tracht", "klassik", "reggae", "metal" };
     private bool startWithBeatTheme = true;
@@ -60,7 +60,7 @@ public class ThemeSwitcherWindow : EditorWindow
             gameManagerObj = GameObject.Find("_GameManager");
             if (gameManagerObj != null)
             {
-                themeScript = gameManagerObj.GetComponent<ChangeTheme>();
+                themeScript = gameManagerObj.GetComponent<SkinManager>();
             }
         }
 

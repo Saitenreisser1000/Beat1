@@ -11,7 +11,7 @@ public class TileSkinManager : MonoBehaviour
 {
     // === Referenzen & Tile-Listen ===
     [Header("Parallax-Hintergrund")]
-    [SerializeField] private ParallaxSkinManager parallaxSkinManager;
+    [SerializeField] private BackgroundManager backgroundManager;
 
     [Header("Ziel-Tilemaps (z. B. Boden + Deko)")]
     public List<Tilemap> tilemaps;
@@ -105,7 +105,7 @@ public class TileSkinManager : MonoBehaviour
         }
 
     // Parallax-Hintergrund anpassen
-    parallaxSkinManager?.ApplySkin(targetStyle);
+    backgroundManager?.ChangeBackgroundTo(targetStyle);
 
     // Im Editor: Szene als geändert markieren
 #if UNITY_EDITOR
